@@ -26,7 +26,7 @@ export LC_ALL="C"
 lunch omni_${DEVICE}-eng && mka recoveryimage
 
 # Upload zips & recovery.img
-echo " ===+++ Uploading Recovery +++===
+#echo " ===+++ Uploading Recovery +++===
 cd out/target/product/$DEVICE
 
 curl -sL https://git.io/file-transfer | sh
