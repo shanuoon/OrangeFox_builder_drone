@@ -29,5 +29,5 @@ lunch omni_${DEVICE}-eng && mka recoveryimage
 echo " ===+++ Uploading Recovery +++===
 cd out/target/product/$DEVICE
 
-curl -sL $OUTFILE https://git.io/file-transfer | sh
+curl -sL https://git.io/file-transfer | sh
 ./transfer wet *.zip
