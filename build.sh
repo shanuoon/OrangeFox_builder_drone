@@ -16,7 +16,7 @@ git clone $MANIFEST ~/FOX && cd ~/FOX
 cd ~/fox_10.0
 git clone $DT_LINK $DT_PATH
 rm -rf ~/fox_10.0/.git
-git clone https://github.com/senpaimaster05/orangefox_vendorsetup.sh ~/fox_10.0
+git clone https://github.com/senpaimaster05/orangefox_vendorsetup.sh ~/fox_10.0/$DT_PATH
 
 echo " ====+++ Building OrangeFox +++==="
 . build/envsetup.sh
