@@ -1,5 +1,4 @@
 #!/bin/bash
-
 MANIFEST="https://gitlab.com/OrangeFox/sync.git"
 DEVICE=dandelion
 DT_LINK="https://github.com/senpaimaster05/twrp_device_xiaomi_dandelion -b android-10.0 -b android-10.0"
