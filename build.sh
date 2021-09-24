@@ -1,8 +1,8 @@
 #!/bin/bash
 MANIFEST="https://gitlab.com/OrangeFox/sync.git"
-DEVICE=dandelion
-DT_LINK="https://github.com/senpaimaster05/twrp_device_xiaomi_dandelion -b android-10.0"
-DT_PATH=device/xiaomi/$DEVICE
+DEVICE=KD7
+DT_LINK="https://github.com/mastersenpai0405/recovery_device_tecno_KD7 -b android-10.0"
+DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
@@ -14,7 +14,6 @@ git clone $MANIFEST ~/FOX && cd ~/FOX
 ./get_fox_10.sh ~/fox_10.0
 cd ~/fox_10.0
 git clone $DT_LINK $DT_PATH
-rm -rf ~/fox_10.0/.git
 
 echo " ====+++ Building OrangeFox +++==="
 . build/envsetup.sh
