@@ -1,7 +1,7 @@
 #!/bin/bash
 MANIFEST="https://gitlab.com/OrangeFox/sync.git"
 DEVICE=KD7
-DT_LINK="https://github.com/mastersenpai0405/recovery_device_tecno_KD7"
+DT_LINK="https://github.com/mastersenpai0405/recovery_device_tecno_KD7 -b android-10.0"
 DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
@@ -15,7 +15,6 @@ git clone $MANIFEST ~/FOX && cd ~/FOX
 cd ~/fox_10.0
 git clone $DT_LINK $DT_PATH
 rm -rf ~/fox_10.0/.git
-git clone https://github.com/senpaimaster05/orangefox_vendorsetup.sh ~/fox_10.0/$DT_PATH
 
 echo " ====+++ Building OrangeFox +++==="
 . build/envsetup.sh
