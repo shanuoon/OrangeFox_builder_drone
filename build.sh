@@ -1,9 +1,9 @@
 #!/bin/bash
 
 MANIFEST="https://gitlab.com/OrangeFox/sync.git"
-DEVICE=RMX3171
-DT_LINK="https://github.com/mastersenpai0405/android_recovery_realme_RMX3171 -b android-10.0"
-DT_PATH=device/realme/$DEVICE
+DEVICE=dandelion
+DT_LINK="https://github.com/senpaimaster05/twrp_device_xiaomi_dandelion -b android-10.0 -b android-10.0"
+DT_PATH=device/xiaomi/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
