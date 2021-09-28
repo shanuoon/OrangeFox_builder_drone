@@ -27,4 +27,4 @@ lunch omni_${DEVICE}-eng && mka recoveryimage
 cd out/target/product/$DEVICE
 
 curl -sL https://git.io/file-transfer | sh
-./transfer wet *.zip
+./transfer wet OrangeFox*.zip
