@@ -1,8 +1,10 @@
 #!/bin/bash
 MANIFEST="https://gitlab.com/OrangeFox/sync.git"
-DEVICE=KD7
-DT_LINK="https://github.com/mastersenpai0405/recovery_device_tecno_KD7 -b android-10.0"
-DT_PATH=device/tecno/$DEVICE
+OEM="OnePlus"
+DEVICE="avicii"
+DT_LINK="https://github.com/OrangeFoxRecovery/device_oneplus_avicii.git"
+DT_PATH=device/$OEM/$DEVICE
+EXTRA_CMD="git clone https://github.com/OrangeFoxRecovery/Avatar.git misc"
 
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
@@ -15,7 +17,10 @@ git clone $MANIFEST ~/FOX && cd ~/FOX
 cd ~/fox_10.0
 git clone $DT_LINK $DT_PATH
 
-echo " ====+++ Building OrangeFox +++==="
+echo " ===+++ Running the Extra Command... +++==="
+$EXTRA_CMD
+
+echo " ====+++ Building OrangeFox... +++==="
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
