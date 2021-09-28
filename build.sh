@@ -1,6 +1,6 @@
 #!/bin/bash
 MANIFEST="https://gitlab.com/OrangeFox/sync.git"
-OEM="OnePlus"
+OEM="oneplus"
 DEVICE="avicii"
 DT_LINK="https://github.com/OrangeFoxRecovery/device_oneplus_avicii.git"
 DT_PATH=device/$OEM/$DEVICE
